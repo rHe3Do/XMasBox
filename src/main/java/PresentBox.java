@@ -8,14 +8,15 @@ public class PresentBox {
         Present box[] = {mms, mars};
         double sumw = CalcWeight(box);
         double sump = CalcPrice(box);
+        System.out.println("В рождественской коробке с подарками следующие сладости:");
         for (Present somePresent : box) {
             System.out.println(somePresent.toString());
         }
-        System.out.println("Общая стоимость всех подарков = " + sump);
-        System.out.println("Общий вес всех подарков = " + sumw);
+        System.out.println("Общая стоимость всех подарков = " + sump + "$");
+        System.out.println("Общий вес всех подарков = " + sumw + "кг");
     }
 
-    public static double CalcWeight(Present box[]){
+    private static double CalcWeight(Present box[]){
         double sum = 0;
         for (Present somePresent : box) {
             sum += somePresent.getWeight();
@@ -23,7 +24,7 @@ public class PresentBox {
         return sum;
     }
 
-    public static double CalcPrice(Present box[]){
+    private static double CalcPrice(Present box[]){
         double sum = 0;
         for (Present somePresent : box) {
             sum += somePresent.getPrice();
