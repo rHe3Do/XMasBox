@@ -9,16 +9,22 @@ public class Candy extends Present {
         this.pack = pack;
     }
 
+    public Candy(){}
+
+    public static void pushCandyToBox(){
+
+    }
     public String getpack() {
         return pack;
     }
 
-    public void setpack(String pack) {
+    public void setPack(String pack) {
+
         this.pack = pack;
     }
 
     @Override
     public String toString() {
-        return "Candy: [" + super.toString() + "; упаковка = " + pack + "]";
+        return "Конфета: [" + super.toString() + "; упаковка = " + pack + "]";
     }
 }

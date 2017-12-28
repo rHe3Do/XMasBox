@@ -12,6 +12,13 @@ public abstract class Present {
         this.weight = weight;
     }
 
+    public Present(String brand, double price){
+        this.brand = brand;
+        this.price = price;
+    }
+
+    public Present(){}
+
     public String getBrand() {
         return brand;
     }

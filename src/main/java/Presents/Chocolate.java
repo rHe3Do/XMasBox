@@ -9,6 +9,8 @@ public class Chocolate extends Present {
         this.type = type;
     }
 
+    public Chocolate(){}
+
     public String getType() {
         return type;
     }
@@ -19,6 +21,6 @@ public class Chocolate extends Present {
 
     @Override
     public String toString() {
-        return "Chocolate: [" + super.toString() + "; тип = " + type + "]";
+        return "Шоколад: [" + super.toString() + "; тип = " + type + "]";
     }
 }
